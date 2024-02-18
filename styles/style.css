@@ -1,0 +1,115 @@
+
+.frame{
+    background-color: #9DBEBB;
+    width: 1440px;
+    height: 900px;
+  }
+  .rectangle {
+    background-color: #BE0909;
+    box-sizing: border-box;
+    width: 954px;
+    height: 594px;
+    top: 153px;
+    left: 243px;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
+    display: flexbox; 
+    float:left;
+    padding: 80px;
+    
+  }
+  .rectangle2 {
+    width: 345px;
+    height: 594px;
+    top:153px;
+    left:852px;
+    background-color: #FFB039;
+    box-sizing: border-box;
+    float:left;
+  }
+
+  .name-wrapper {
+    width: 400px;
+    height: 72px;
+    top:217px;
+    left:308px;
+    padding-bottom: 10px;
+  }
+  .fullname {
+    font-family: "Roboto", Helvetica;
+    color: #FEFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap:break-word;
+    padding: 0px;
+  }
+  .email-wrapper {
+    width: 160px;
+    height: 72px;
+    top:311px;
+    left:308px;
+    padding-bottom: 10px;
+  }
+  .messagei-wrapper {
+    width: 400px;
+    height: 72px;
+    top:507px;
+    left:308px;
+    padding-bottom: 10px;
+    
+  }
+
+  .button-wrapper {
+    width: 202px;
+    height: 48px;
+    top:635px;
+    left:407px;
+    background: #468189; 
+    border-radius: 40px;
+    padding: 10px; 
+  }
+  
+  .messager-wrapper {
+    width: 213px;
+    height: 72px;
+    top:414px;
+    left:308px;
+    padding-bottom: 10px;
+  }
+  
+
+  .hiclipart {
+    width: 663px; 
+    height: 603px; 
+    left: 585px; 
+    top: 205px; 
+    float: right;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 202px;
+    height: 48px;
+    top:635px;
+    left:407px;
+    background-color: #468189;
+    color: white;
+    padding: 14px 20px;
+    margin: 28px 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: "Roboto", Helvetica;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: center;
+     text-decoration: none;
+    display: inline-block;
+  }
