@@ -6,34 +6,49 @@
     <meta charset="UTF-8">
     <meta name="author" content="Sowjanya Manthripragada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--link rel="stylesheet" href="styles/reset.css" /-->
+    <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script lang="javascript">
+        function validateForm() {
+            let fullname = document.forms["myForm"]["fname"].value;
+            let emailtext =document.forms["myForm"]["emailtext"].value;
+            let messagere =document.forms["myForm"]["messagere"].value;
+            let messagein =document.forms["myForm"]["messagein"].value;
+            if (fullname == "" && emailtext=="" && messagere=="" && messagein=="") {
+              alert("Details must be filled out");
+              return false;
+            }
+          }
+        </script>
 </head>
 
 <body>
-    <p>MacBook Pro-1</p>
-    <div class="frame">
+    <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
+    <h2>MacBook Pro - 1</h2>
+        <div class="flex-container">
         <div class="rectangle">
             <div class="name-wrapper">
-                <p class="fullname">FULL NAME</p>
-                <Input type="text" name="fname"></Input>
+                <label class="fullname" for="funame">FULL NAME</label>
+                <input type="text" name="fname"></input>
             </div>
             <div class="email-wrapper">
-                <p class="fullname">Your Email</p>
-                <Input type="text" name="email" placeholder="Your Email"></Input>
+                <label class="fullname" for="email">EMAIL</label>
+                <input type="email" name="emailtext" placeholder="Your Email.."></input>
             </div>
             <div class="messager-wrapper">
-                <p class="fullname">MESSAGE REGARDING</p>
-                <Input type="text" name="messager"></Input>
+                <label class="fullname" for="messagere">MESSAGE REGARDING</label>
+                <input type="text" name="messagere"></input>
             </div>
             <div class="messagei-wrapper">
                 <p class="fullname">MESSAGE</p>
-                <Input type="text" name="messagei" placeholder="Your Message"></Input>
+                <textarea name="messagein">Your Message</textarea>
             </div>
-            <Input type="submit" name="SEND MESSAGE" value="SEND MESSAGE"></Input>
+            <input type="submit" name="SEND MESSAGE" value="SEND MESSAGE"></input>
         </div>
         <div class="rectangle2">
             <img class="hiclipart" src="images/hiclipart.png" alt="Yellow Duck form" />
         </div>
+    </div>
+    </form>
 </body>
 </html>

@@ -1,8 +1,11 @@
 
-.frame{
+.flex-container{
     background-color: #9DBEBB;
-    width: 1440px;
+    max-width: 1440px;
     height: 900px;
+    display: flex;
+    align-items: center;
+    padding:100px;
   }
   .rectangle {
     background-color: #BE0909;
@@ -11,10 +14,7 @@
     height: 594px;
     top: 153px;
     left: 243px;
-    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.25);
-    display: flexbox; 
-    float:left;
-    padding: 80px;
+    padding: 80px; 
     
   }
   .rectangle2 {
@@ -23,8 +23,7 @@
     top:153px;
     left:852px;
     background-color: #FFB039;
-    box-sizing: border-box;
-    float:left;
+    transform: translate();
   }
 
   .name-wrapper {
@@ -85,8 +84,27 @@
     float: right;
 }
 
-input[type=text], select {
+input[type=text], select{
     width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+
+  input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+  }
+  
+
+  textarea {
+    width: 90%;
     padding: 12px 20px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -110,6 +128,6 @@ input[type=text], select {
     font-size: 18px;
     font-weight:bold;
     text-align: center;
-     text-decoration: none;
+    text-decoration: none;
     display: inline-block;
   }
