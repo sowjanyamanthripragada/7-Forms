@@ -92,6 +92,10 @@ input[type=text], select{
     border-radius: 2px;
     box-sizing: border-box;
   }
+  input[type=text]:hover {
+    background-color: #aa7b04;
+
+  }
 
   input[type=email]{
     width: 100%;
@@ -101,7 +105,10 @@ input[type=text], select{
     border-radius: 2px;
     box-sizing: border-box;
   }
-  
+  input[type=email]:hover {
+    background-color: #aa7b04;
+
+  }
 
   textarea {
     width: 90%;
@@ -111,6 +118,11 @@ input[type=text], select{
     border-radius: 2px;
     box-sizing: border-box;
   }
+  textarea:hover {
+    background-color: #aa7b04;
+
+  }
+  
   
   input[type=submit] {
     width: 202px;
@@ -130,4 +142,9 @@ input[type=text], select{
     text-align: center;
     text-decoration: none;
     display: inline-block;
+  }
+
+  input[type=submit]:hover {
+    background-color: #04AA6D;
+
   }

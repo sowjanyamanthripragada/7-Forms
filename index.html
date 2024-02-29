@@ -8,42 +8,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <script lang="javascript">
-        function validateForm() {
-            let fullname = document.forms["myForm"]["fname"].value;
-            let emailtext =document.forms["myForm"]["emailtext"].value;
-            let messagere =document.forms["myForm"]["messagere"].value;
-            let messagein =document.forms["myForm"]["messagein"].value;
-            if (fullname == "" && emailtext=="" && messagere=="" && messagein=="") {
-              alert("Details must be filled out");
-              return false;
-            }
-          }
-        </script>
+    
 </head>
 
 <body>
-    <form name="myForm" action="index.html" method="post" onsubmit="return validateForm()">
+    <form name="myForm"  method="post" >
     <h2>MacBook Pro - 1</h2>
         <div class="flex-container">
         <div class="rectangle">
             <div class="name-wrapper">
                 <label class="fullname" for="funame">FULL NAME</label>
-                <input type="text" name="fname"></input>
+                <input type="text" name="fname" id="fname" required>
             </div>
             <div class="email-wrapper">
                 <label class="fullname" for="email">EMAIL</label>
-                <input type="email" name="emailtext" placeholder="Your Email.."></input>
+                <input type="email" name="emailtext" id="email" placeholder="Your Email.." required>
             </div>
             <div class="messager-wrapper">
                 <label class="fullname" for="messagere">MESSAGE REGARDING</label>
-                <input type="text" name="messagere"></input>
+                <input type="text" name="messagere" id="messagere" required>
             </div>
             <div class="messagei-wrapper">
                 <p class="fullname">MESSAGE</p>
                 <textarea name="messagein">Your Message</textarea>
             </div>
-            <input type="submit" name="SEND MESSAGE" value="SEND MESSAGE"></input>
+            <input type="submit" name="SEND MESSAGE" value="SEND MESSAGE">
         </div>
         <div class="rectangle2">
             <img class="hiclipart" src="images/hiclipart.png" alt="Yellow Duck form" />
